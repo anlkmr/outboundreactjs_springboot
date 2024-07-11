@@ -13,9 +13,9 @@
     </parent>
     
     <groupId>com.cestasoft.mobileservices.msp</groupId>
-    <artifactId>OutboundProcessor</artifactId>
+    <artifactId>Outbound</artifactId>
     <version>v1</version>
-    <name>OutboundProcessor</name>
+    <name>Outbound</name>
     <description>Process outbound transactions for messaging</description>
 
     <properties>

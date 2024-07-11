@@ -25,8 +25,8 @@ RUN mvn package -DskipTests
 FROM openjdk:17.0.2-slim
 WORKDIR /app
 # Copy the JAR file from the build stage to the current location
-COPY --from=build /app/target/OutboundProcessor-v1.jar .
+COPY --from=build /app/target/Outbound-v1.jar .
 # Expose the port your Spring Boot app will run on
 EXPOSE 8145
 # Command to run the Spring Boot application
-CMD ["java", "-jar", "OutboundProcessor-v1.jar"]
+CMD ["java", "-jar", "Outbound-v1.jar"]
