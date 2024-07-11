@@ -1,0 +1,14 @@
+# Use a suitable base image with a JDK
+FROM openjdk:17-alpine
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Copy the JAR file into the container
+COPY target/OutboundProcessor-0.0.1.jar app.jar
+
+# Expose the port your application listens on (adjust as needed)
+EXPOSE 8145
+
+# Define the command to run your application
+CMD ["java", "-jar", "app.jar"]
