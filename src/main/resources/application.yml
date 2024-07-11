@@ -22,7 +22,7 @@ logging:
 # spring config
 spring:
   application:
-    name: 'bpe-mobileservices-outbound'
+    name: 'outbound'
   messages:
     basename: i18n/messages
     encoding: UTF-8

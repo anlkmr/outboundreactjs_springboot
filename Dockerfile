@@ -2,7 +2,7 @@
 FROM eclipse-temurin:17-jdk-jammy AS build
 #FROM maven:3.8.4-openjdk-17 as build
 WORKDIR /app
-#RUN rm -rf /app/*
+RUN rm -rf /app/*
 # Clone the Spring Boot application from Git
 #RUN apt-get update && apt-get install -y git
 #RUN apt-get update -y && apt-get install git -y && apt-get install maven -y && apt-get install nodejs -y && apt-get install npm && npm install -g copyfiles@latest -y && apt-get install npmcli -y
